@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    const scriptEl = document.createElement("script");
+    scriptEl.setAttribute("fetchpriority", "high");
+    scriptEl.setAttribute("charset", "UTF-8");
+
+    const scriptURL = new URL(
+      "https://trinitymedia.ai/player/trinity/2900017215/?"
+    );
+    scriptURL.searchParams.set(
+      "pageURL",
+      "https://www.spglobal.com/commodityinsights/en/market-insights/blogs/oil/040924-ctracker-oil-belt-west-africa-china-soybean-gas-power-us-shipping-freight"
+    );
+    scriptURL.searchParams.set(
+      "cf",
+      "https://vd.trinitymedia.ai/audio/demo/demo_blog/Website_Player.mp3"
+    );
+    // const scriptURL = new URL(
+    //   "https://trinitymedia.ai/player/trinity-i/2900000257/?pageURL=ADD_PAGE_URL&cf=https://vd.trinitymedia.ai/audio/demo/demo_blog/Website_Player.mp3"
+    // );
+    scriptEl.src = scriptURL.toString();
+
+    document.currentScript.parentNode.insertBefore(
+      scriptEl,
+      document.currentScript
+    );
+  </script>
+
+  <head></head>
+
+  <body>
+    <!-- <iframe
+      class="trinity-player trinity-iframe"
+      src="https://trinitymedia.ai/player/trinity-i/2900017215/?pageURL='https://www.spglobal.com/commodityinsights/en/market-insights/blogs/oil/040924-ctracker-oil-belt-west-africa-china-soybean-gas-power-us-shipping-freight'&readContentType=URL"
+      style="border: 0; width: 100% !important; height: 80px !important"
+    ></iframe> -->
+
+    <div
+      class="trinity-tts-pb"
+      dir="ltr"
+      style="
+        font: 12px / 18px Verdana, Arial;
+        height: 80px;
+        line-height: 80px;
+        text-align: left;
+        margin: 0 0 0 82px;
+      "
+    >
+      <strong style="font-weight: 400"
+        >Getting your
+        <a
+          href="//trinityaudio.ai"
+          style="color: #4b4a4a; text-decoration: none; font-weight: 700"
+          >Trinity Audio</a
+        >
+        player ready...</strong
+      >
+    </div>
+  </body>
+</html>
